@@ -1,0 +1,86 @@
+{
+  "version": "d0243a4165",
+  "built_at": "2026-11-18T17:39:52",
+  "count": 16914,
+  "counts": {
+    "movie": 13000,
+    "tv": 3914
+  },
+  "shard_size": 500,
+  "shard_count": 34,
+  "top_k": 30,
+  "score_scale": 1000,
+  "genre_groups": [
+    {
+      "id": 0,
+      "name": "Animation & Family",
+      "color": "#b8e986"
+    },
+    {
+      "id": 1,
+      "name": "Documentary",
+      "color": "#c0c7d1"
+    },
+    {
+      "id": 2,
+      "name": "Horror",
+      "color": "#d00000"
+    },
+    {
+      "id": 3,
+      "name": "Sci-Fi & Fantasy",
+      "color": "#a66bff"
+    },
+    {
+      "id": 4,
+      "name": "Crime & Thriller",
+      "color": "#2ec4b6"
+    },
+    {
+      "id": 5,
+      "name": "Action & Adventure",
+      "color": "#ff6b35"
+    },
+    {
+      "id": 6,
+      "name": "Romance",
+      "color": "#ff77b7"
+    },
+    {
+      "id": 7,
+      "name": "Comedy",
+      "color": "#ffd23f"
+    },
+    {
+      "id": 8,
+      "name": "Drama",
+      "color": "#4d96ff"
+    },
+    {
+      "id": 9,
+      "name": "Other",
+      "color": "#6b7280"
+    }
+  ],
+  "type_codes": {
+    "0": "movie",
+    "1": "tv"
+  },
+  "image_base": "https://image.tmdb.org/t/p/",
+  "image_sizes": {
+    "poster_card": "w185",
+    "poster_panel": "w342",
+    "backdrop": "w780"
+  },
+  "tmdb_url": {
+    "movie": "https://www.themoviedb.org/movie/",
+    "tv": "https://www.themoviedb.org/tv/"
+  },
+  "model": "all-MiniLM-L6-v2",
+  "attribution": "This product uses the TMDB API but is not endorsed or certified by TMDB. Movie and TV data and images courtesy of The Movie Database (themoviedb.org).",
+  "files": {
+    "galaxy.bin": 270624,
+    "search-index.json": 708296,
+    "posters.json": 591510
+  }
+}
