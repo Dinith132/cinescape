@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #07080f;
+    color: #eef0f6;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #8b7bff;
+    outline-offset: 2px;
+  }
+}
+
+.font-display {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.glass-panel {
+  background: rgba(13, 16, 28, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.glass-panel-elevated {
+  background: rgba(13, 16, 28, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 40px rgba(139, 123, 255, 0.08);
+}
+
+/* Custom subtle scrollbars for suggestion list, details panel, and list view */
+.cinescape-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.cinescape-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cinescape-scroll::-webkit-scrollbar-thumb {
+  background: rgba(139, 147, 167, 0.25);
+  border-radius: 9999px;
+}
+
+.cinescape-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 123, 255, 0.45);
+}
+
+@keyframes cinescape-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit {
+  animation: cinescape-orbit 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit {
+    animation: none;
+  }
+}

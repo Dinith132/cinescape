@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 24" fill="none" role="img" aria-label="TMDB">
+  <rect x="0.5" y="0.5" width="111" height="23" rx="5.5" fill="#0d101c" stroke="#8b93a7" stroke-opacity="0.3" />
+  <text
+    x="12"
+    y="16"
+    fill="#8b93a7"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="11"
+    font-weight="700"
+    letter-spacing="1.6"
+  >
+    TMDB
+  </text>
+  <rect x="60" y="9" width="38" height="6" rx="3" fill="#4fdbcc" fill-opacity="0.7" />
+</svg>
